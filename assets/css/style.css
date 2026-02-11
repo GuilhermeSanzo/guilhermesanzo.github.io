@@ -20,7 +20,7 @@ nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-b
 /* Hero Section */
 /* Hero Section Moderno */
 .hero {
-    height: 90vh; /* Mantém a altura quase total da tela */
+    height: 100vh; /* Mantém a altura quase total da tela */
     display: flex;
     align-items: center;
     justify-content: center;
