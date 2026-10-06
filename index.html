@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR" class="dark overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="img/guilherme-logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Guilherme Sanzo | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,21 +30,23 @@
       }
     </script>
   </head>
-  <body class="bg-zinc-950 text-zinc-400 antialiased font-sans selection:bg-zinc-800 selection:text-zinc-200 min-h-screen">
-    <div id="app">
-      <main class="max-w-3xl mx-auto w-full px-6 py-20 sm:py-28">
+  <body class="bg-zinc-950 text-zinc-400 antialiased font-sans selection:bg-zinc-800 selection:text-zinc-200 min-h-screen overflow-x-hidden">
+    <div id="app" class="w-full">
+      <main class="max-w-3xl mx-auto w-full px-4 sm:px-6 py-12 sm:py-24">
         
         <!-- Hero Section -->
         <section id="hero">
-          <div class="flex items-center gap-3">
-            <span class="h-2 w-2 rounded-full bg-amber-500 animate-pulse"></span>
-            <span class="text-xs text-zinc-500 font-mono tracking-widest uppercase">System Maintenance • /var/www/portfolio</span>
+          <div class="flex items-center gap-2.5">
+            <span class="h-2 w-2 rounded-full bg-amber-500 animate-pulse shrink-0"></span>
+            <span class="text-[11px] sm:text-xs text-zinc-500 font-mono tracking-wider sm:tracking-widest uppercase">
+              System Maintenance <span class="hidden sm:inline">• /var/www/portfolio</span>
+            </span>
           </div>
           
-          <div class="flex flex-col sm:flex-row sm:items-center gap-6 mt-8">
-            <img src="img/guilherme-logo.png" alt="Guilherme Santos Souza Logo" class="h-20 w-20 rounded-2xl object-cover shadow-lg border border-zinc-800">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mt-6 sm:mt-8">
+            <img src="img/guilherme-logo.png" alt="Guilherme Santos Souza Logo" class="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-cover shadow-lg border border-zinc-800 shrink-0">
             <div>
-              <h1 class="text-4xl sm:text-5xl font-bold text-zinc-100 tracking-tight">
+              <h1 class="text-3xl sm:text-5xl font-bold text-zinc-100 tracking-tight leading-tight">
                 Guilherme S. Souza
               </h1>
               <p class="text-xs sm:text-sm text-zinc-500 font-mono mt-1">
@@ -53,18 +55,18 @@
             </div>
           </div>
           
-          <p class="text-lg text-zinc-400 mt-5 leading-relaxed">
+          <p class="text-base sm:text-lg text-zinc-400 mt-5 leading-relaxed">
             Desenvolvedor de Software focado em soluções robustas de Back-End, microsserviços e engenharia web com Java, PHP (Laravel) e Python.
           </p>
 
           <!-- Maintenance Box -->
-          <div class="mt-8 p-4 rounded-xl border border-zinc-800 bg-zinc-900/40 flex items-start gap-3.5">
+          <div class="mt-6 sm:mt-8 p-4 rounded-xl border border-zinc-800 bg-zinc-900/40 flex items-start gap-3.5">
             <div class="mt-0.5 p-1.5 rounded-lg bg-amber-500/10 text-amber-400 shrink-0">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
               </svg>
             </div>
-            <div>
+            <div class="min-w-0">
               <h2 class="text-xs font-semibold text-zinc-200 uppercase tracking-wider font-mono">Infraestrutura em Migração de Nuvem</h2>
               <p class="text-xs sm:text-sm text-zinc-400 mt-1 leading-relaxed">
                 O portal oficial está passando por uma migração de infraestrutura para novo provedor em nuvem. Enquanto a nova versão é finalizada, todos os códigos-fonte, documentações e arquiteturas estão disponíveis nos repositórios públicos abaixo:
@@ -74,18 +76,18 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="mt-20">
-          <div class="flex items-center justify-between mb-8">
-            <h2 class="text-xs font-semibold text-zinc-100 tracking-widest uppercase font-mono">
+        <section id="projects" class="mt-14 sm:mt-20">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-6 sm:mb-8">
+            <h2 class="text-xs font-semibold text-zinc-100 tracking-wider sm:tracking-widest uppercase font-mono">
               Engineering & Deployed Systems
             </h2>
-            <span class="text-xs text-zinc-500 font-mono">4 Repositórios Públicos</span>
+            <span class="text-[11px] sm:text-xs text-zinc-500 font-mono">4 Repositórios Públicos</span>
           </div>
           
-          <div class="grid gap-6 sm:grid-cols-2">
+          <div class="grid gap-4 sm:gap-6 sm:grid-cols-2">
             
             <!-- PopAtlas -->
-            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
+            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-5 sm:p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
               <div class="w-full">
                 <div class="h-10 w-10 rounded-xl bg-zinc-800/90 border border-zinc-700/60 flex items-center justify-center text-red-500 font-bold mb-4 shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-all duration-300">
                   <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -100,16 +102,16 @@
                   Plataforma Full Stack de rastreamento de mídia com Spring Security JWT, integração TMDb e PostgreSQL.
                 </p>
               </div>
-              <div class="w-full mt-6">
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Java 21</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Spring Boot 3</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">React</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PostgreSQL</span>
+              <div class="w-full mt-5 sm:mt-6">
+                <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Java 21</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Spring Boot 3</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">React</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PostgreSQL</span>
                 </div>
-                <div class="mt-6 pt-6 border-t border-zinc-800/50 flex items-center gap-3">
+                <div class="mt-5 pt-5 sm:mt-6 sm:pt-6 border-t border-zinc-800/50 flex items-center gap-3">
                   <a href="https://github.com/GuilhermeSanzo/PopAtlas" target="_blank" rel="noopener noreferrer" 
-                     class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 transition-colors">
+                     class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-xs sm:text-sm hover:bg-zinc-800 active:bg-zinc-800 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                       <path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 010 1.06L2.56 10l3.72 3.72a.75.75 0 01-1.06 1.06L.97 10.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0zm7.44 0a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
                     </svg>
@@ -120,10 +122,10 @@
             </article>
             
             <!-- FrozenFitness -->
-            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
+            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-5 sm:p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
               <div class="w-full">
                 <div class="mb-4 h-10 flex items-center">
-                  <img src="img/frozen-logo.png" alt="FrozenFitness Logo" class="h-10 w-auto grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300">
+                  <img src="img/frozen-logo.png" alt="FrozenFitness Logo" class="h-10 w-auto opacity-90 sm:opacity-60 sm:grayscale sm:group-hover:opacity-100 sm:group-hover:grayscale-0 transition-all duration-300">
                 </div>
                 <div class="flex items-center gap-2">
                   <h3 class="text-zinc-100 font-medium">FrozenFitness</h3>
@@ -133,16 +135,16 @@
                   E-commerce moderno com migração MVC completa, motor de carrinho em sessão e checkout transacional.
                 </p>
               </div>
-              <div class="w-full mt-6">
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PHP 8.3</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Laravel 11</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">SQLite</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Tailwind v4</span>
+              <div class="w-full mt-5 sm:mt-6">
+                <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PHP 8.3</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Laravel 11</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">SQLite</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Tailwind v4</span>
                 </div>
-                <div class="mt-6 pt-6 border-t border-zinc-800/50 flex items-center gap-3">
+                <div class="mt-5 pt-5 sm:mt-6 sm:pt-6 border-t border-zinc-800/50 flex items-center gap-3">
                   <a href="https://github.com/GuilhermeSanzo/FrozenFitness" target="_blank" rel="noopener noreferrer" 
-                     class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 transition-colors">
+                     class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 active:bg-zinc-800 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                       <path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 010 1.06L2.56 10l3.72 3.72a.75.75 0 01-1.06 1.06L.97 10.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0zm7.44 0a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
                     </svg>
@@ -153,10 +155,10 @@
             </article>
 
             <!-- WoodyWoodpecker -->
-            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
+            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-5 sm:p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
               <div class="w-full">
                 <div class="mb-4 h-10 flex items-center">
-                  <img src="img/woody-logo.png" alt="WoodyWoodpecker Logo" class="h-10 w-auto grayscale opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300">
+                  <img src="img/woody-logo.png" alt="WoodyWoodpecker Logo" class="h-10 w-auto opacity-90 sm:opacity-60 sm:grayscale sm:group-hover:opacity-100 sm:group-hover:grayscale-0 transition-all duration-300">
                 </div>
                 <div class="flex items-center gap-2">
                   <h3 class="text-zinc-100 font-medium">WoodyWoodpecker</h3>
@@ -166,16 +168,16 @@
                   Plataforma de livraria com Eloquent ORM avançado (Eager Loading), Blade Templates e integridade relacional.
                 </p>
               </div>
-              <div class="w-full mt-6">
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PHP 8.3</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Laravel 11</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Blade</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Tailwind v4</span>
+              <div class="w-full mt-5 sm:mt-6">
+                <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">PHP 8.3</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Laravel 11</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Blade</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Tailwind v4</span>
                 </div>
-                <div class="mt-6 pt-6 border-t border-zinc-800/50 flex items-center gap-3">
+                <div class="mt-5 pt-5 sm:mt-6 sm:pt-6 border-t border-zinc-800/50 flex items-center gap-3">
                   <a href="https://github.com/GuilhermeSanzo/WoodyWoodpecker" target="_blank" rel="noopener noreferrer" 
-                     class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 transition-colors">
+                     class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 active:bg-zinc-800 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                       <path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 010 1.06L2.56 10l3.72 3.72a.75.75 0 01-1.06 1.06L.97 10.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0zm7.44 0a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
                     </svg>
@@ -186,7 +188,7 @@
             </article>
 
             <!-- YoutubePlaylistExtractor -->
-            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
+            <article class="group relative flex flex-col items-start justify-between border border-zinc-800 bg-zinc-900/30 p-5 sm:p-6 rounded-2xl hover:bg-zinc-800/40 transition-colors">
               <div class="w-full">
                 <div class="h-10 w-10 rounded-xl bg-zinc-800/90 border border-zinc-700/60 flex items-center justify-center text-red-500 font-bold mb-4 shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-all duration-300">
                   <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -201,16 +203,16 @@
                   Automação em nuvem com Google Cloud Client Library para extração paginada de metadados da YouTube API v3.
                 </p>
               </div>
-              <div class="w-full mt-6">
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Python 3</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Google Cloud</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">CLI</span>
-                  <span class="text-xs px-2 py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">dotenv</span>
+              <div class="w-full mt-5 sm:mt-6">
+                <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Python 3</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">Google Cloud</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">CLI</span>
+                  <span class="text-[11px] sm:text-xs px-2 py-0.5 sm:py-1 rounded-md bg-zinc-800/50 text-zinc-300 font-mono">dotenv</span>
                 </div>
-                <div class="mt-6 pt-6 border-t border-zinc-800/50 flex items-center gap-3">
+                <div class="mt-5 pt-5 sm:mt-6 sm:pt-6 border-t border-zinc-800/50 flex items-center gap-3">
                   <a href="https://github.com/GuilhermeSanzo/YoutubePlaylistExtractor" target="_blank" rel="noopener noreferrer" 
-                     class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 transition-colors">
+                     class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-zinc-700 bg-transparent text-zinc-300 font-semibold text-sm hover:bg-zinc-800 active:bg-zinc-800 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                       <path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 010 1.06L2.56 10l3.72 3.72a.75.75 0 01-1.06 1.06L.97 10.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0zm7.44 0a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
                     </svg>
@@ -224,30 +226,14 @@
         </section>
 
         <!-- Footer -->
-        <footer class="mt-28 border-t border-zinc-800/50 pt-8 pb-16 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p class="text-sm text-zinc-500">
+        <footer class="mt-16 sm:mt-28 border-t border-zinc-800/50 pt-8 pb-12 sm:pb-16 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
+          <p class="text-xs sm:text-sm text-zinc-500">
             © 2026 Guilherme S. Souza. All rights reserved.
           </p>
-          <div class="flex gap-6">
-            <a href="mailto:guilherme.sanzo@outlook.com" class="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
-                <path d="M1.5 8.67v8.58a2.25 2.25 0 002.25 2.25h16.5a2.25 2.25 0 002.25-2.25V8.67l-8.21 4.56a2.25 2.25 0 01-2.18 0L1.5 8.67z" />
-                <path d="M22.5 6.908V6.75a2.25 2.25 0 00-2.25-2.25H3.75A2.25 2.25 0 001.5 6.75v.158l9.714 5.4a.75.75 0 00.752 0L22.5 6.908z" />
-              </svg>
-              Email
-            </a>
-            <a href="https://www.linkedin.com/in/guilhermesanzo" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-              LinkedIn
-            </a>
-            <a href="https://github.com/GuilhermeSanzo" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-              </svg>
-              GitHub
-            </a>
+          <div class="flex items-center gap-6 text-xs sm:text-sm">
+            <a href="mailto:guilherme.sanzo@outlook.com" class="text-zinc-400 hover:text-zinc-100 transition-colors">Email</a>
+            <a href="https://www.linkedin.com/in/guilhermesanzo" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-zinc-100 transition-colors">LinkedIn</a>
+            <a href="https://github.com/GuilhermeSanzo" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-zinc-100 transition-colors">GitHub</a>
           </div>
         </footer>
 
